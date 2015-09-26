@@ -1,10 +1,11 @@
 FROM ubuntu:14.04
 
+MAINTAINER Laura Frank <laura@codeship.com>
+
 ENV RUBY_MAJOR="2.2" \
     RUBY_VERSION="2.2.2" \
     DB_PACKAGES="libsqlite3-dev" \
     RUBY_PACKAGES="ruby2.2 ruby2.2-dev"
-
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
       build-essential \
